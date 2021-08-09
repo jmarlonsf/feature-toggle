@@ -1,0 +1,26 @@
+logging:
+  level:
+    com: DEBUG
+
+
+management:
+  security:
+    roles: ADMIN
+  context-path: /management
+
+spring:
+  application:
+    name: feature-toggle
+  profiles:
+    active: prd
+  jackson:
+    serialization.write_dates_as_timestamps: false
+  messages:
+    basename: i18n/messages
+
+server:
+  port: 8080
+
+info:
+  project:
+    version: #project.version#
