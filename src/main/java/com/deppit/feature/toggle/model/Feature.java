@@ -7,6 +7,7 @@ import lombok.Data;
 @Builder
 public class Feature {
 
-    private String id;
+    private Long id;
+    private String name;
     private boolean enable;
 }
