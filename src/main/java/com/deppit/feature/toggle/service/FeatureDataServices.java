@@ -2,9 +2,9 @@ package com.deppit.feature.toggle.service;
 
 import com.deppit.feature.toggle.model.Feature;
 
-import java.util.Set;
+import java.util.List;
 
 public interface FeatureDataServices {
 
-    Set<Feature> loadData(Set<Feature> features);
+    List<Feature> loadData(List<Feature> features);
 }

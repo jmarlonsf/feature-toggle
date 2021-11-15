@@ -41,9 +41,7 @@ public class FeatureServiceImpl implements FeatureService {
     @Override
     public List<Feature> refreshMethods() {
 
-        Set<Feature> features = featureDataServices.loadData(new HashSet<>(readMethods()));
-
-        return new ArrayList<>(features);
+        return featureDataServices.loadData(readMethods());
     }
 
     private Set<Method> findAllFeatures() {
